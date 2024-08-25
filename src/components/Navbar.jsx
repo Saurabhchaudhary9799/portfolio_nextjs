@@ -28,6 +28,7 @@ const Navbar = () => {
         <div>
           <Image
             src={profile}
+            alt="profile_picture"
             className="h-16 w-16 rounded-[50%] transition-all duration-200 ease-in-out cursor-pointer"
             onClick={handleOpenProfile}
           />

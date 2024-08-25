@@ -98,6 +98,7 @@ const Projects = () => {
                   <Image
                     className="rounded-xl"
                     src={item.image}
+                    alt="profile_picture"
                     width={500}
                     height={700}
                   />
@@ -129,6 +130,7 @@ const Projects = () => {
                 <div>
                   <Image
                     className="rounded-xl"
+                     alt="profile_picture"
                     src={item.image}
                     width={500}
                     height={700}
@@ -162,6 +164,7 @@ const Projects = () => {
                   <Image
                     className="rounded-xl"
                     src={item.image}
+                     alt="profile_picture"
                     width={500}
                     height={700}
                   />

@@ -12,7 +12,7 @@ export default function Home() {
                 <p className="text-lg">My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover , I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way .</p>
             </div>
             <div className="roles">
-               <h1  className="text-3xl font-bold after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 mb-5">What I'm doing</h1>
+               <h1  className="text-3xl font-bold after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 mb-5">What I&apos;m doing</h1>
                <div className="flex flex-col xl:flex-row gap-y-5 xl:gap-x-5">
                   <div className=" w-full xl:w-3/6 bg-[#2B2B2C] flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl">
                      <span className="text-yellow-500 text-3xl"><FaLaptopCode/></span>
