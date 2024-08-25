@@ -8,11 +8,16 @@ import { MdLocationPin } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import { FaFileDownload } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 const Profile = () => {
   return (
     <section className="profile-section p-2 flex flex-col gap-y-5">
         <div className='flex flex-col justify-center items-center gap-y-5'>
-            <Image src={profile_picture} width={200} height={200}  className='rounded-[50%]'/>
+          <Image src={profile_picture} width={200} height={200} alt='profile_picture' className='rounded-[50%]'/>
+           
             <span className='text-2xl font-medium'>Saurbh Kumar</span>
             <span className='bg-[#2B2B2C] px-3 py-1 rounded-xl text-sm'>Full Stack Developer</span>
         </div>
@@ -56,9 +61,11 @@ const Profile = () => {
                   </div>
                </li>
                <li className='flex justify-center gap-x-5 text-xl'>
-                  <span><BsGithub/></span>
-                  <span><BsInstagram/></span>
-                  <span><BsLinkedin/></span>
+                  <span className='hover:-translate-y-1 transition-all hover:text-yellow-500'><Link href={"https://github.com/Saurabhchaudhary9799"} target='_blank'><BsGithub/></Link></span>
+                  <span className='hover:-translate-y-1 transition-all hover:text-yellow-500'><Link href={"https://www.instagram.com/always_code7?igsh=MWpxbzVleXd1c3d0NA=="}  target='_blank'><BsInstagram/></Link></span>
+                  <span className='hover:-translate-y-1 transition-all hover:text-yellow-500'><Link href={"https://www.linkedin.com/in/saurbhkumar/"} target='_blank'><BsLinkedin/></Link></span>
+                  <span className='hover:-translate-y-1 transition-all hover:text-yellow-500'><Link href={"https://x.com/Saurabh_barakh"} target='_blank'><BsTwitterX/></Link></span>
+                  <span className='hover:-translate-y-1 transition-all hover:text-yellow-500'><Link href={"https://drive.google.com/file/d/1pxFFy3dMKSWyOujHc4cMl_QZ80Elrj86/view?usp=drive_link"} target='_blank'><FaFileDownload/></Link></span>
                </li>
             </ul>
         </div>
