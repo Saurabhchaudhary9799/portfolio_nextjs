@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   const [category, setCategory] = useState("all");
   const projects = [
@@ -88,10 +88,10 @@ const Projects = () => {
       </div>
       <div className="py-5">
         {category === "all" && (
-          <div className="flex flex-col gap-y-5 justify-center items-center">
+          <div className="flex flex-col gap-y-10 justify-center items-center">
             {projects.map((item, i) => (
-              <div
-                className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C]"
+              <motion.div whileHover={{scale:1.1}}
+                className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C] "
                 key={i}
               >
                 <div>
@@ -116,14 +116,14 @@ const Projects = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         )}
         {category === "fullstack" && (
-          <div className="flex flex-col gap-y-5 justify-center items-center">
+          <div className="flex flex-col gap-y-10 justify-center items-center">
             {fullStackProjects.map((item, i) => (
-              <div
+              <motion.div whileHover={{scale:1.1}}
                 className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C]"
                 key={i}
               >
@@ -149,14 +149,14 @@ const Projects = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         )}
         {category === "frontend" && (
-          <div className="flex flex-col gap-y-5 justify-center items-center">
+          <div className="flex flex-col gap-y-10 justify-center items-center">
             {frontendProjects.map((item, i) => (
-              <div
+              <motion.div whileHover={{scale:1.1}}
                 className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C]"
                 key={i}
               >
@@ -182,7 +182,7 @@ const Projects = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         )}

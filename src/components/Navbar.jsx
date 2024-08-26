@@ -9,9 +9,12 @@ import Profile from "./Profile";
 import SideNav from "./SideNav";
 import {motion} from "framer-motion";
 
+
 const Navbar = () => {
   const [openProfile, setOpenProfile] = useState(false);
  const [isOpen , setIsOpen] = useState(false);
+ 
+ 
   const handleOpenProfile = () => {
     setOpenProfile(!openProfile);
   };
@@ -39,7 +42,6 @@ const Navbar = () => {
       </div>
       {
         openProfile && <Profile/>
-        
       }
       {
         isOpen && <motion.div initial={{x:300}} animate={{x:0}}  className="absolute h-screen w-3/6 border right-0 top-0 transition-all  ease-in bg-white text-black z-10 block md:hidden"><SideNav handleCloseNavigation={handleCloseNavigation}/></motion.div>
