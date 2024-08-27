@@ -2,7 +2,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { animate,motion } from "framer-motion";
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
 const Projects = () => {
   const [category, setCategory] = useState("all");
   const projects = [
@@ -51,13 +64,13 @@ const Projects = () => {
   const frontendProjects = projects.filter(
     (item) => item.category === "frontend"
   );
-  console.log("fullstack", fullStackProjects);
-  console.log("frontend", frontendProjects);
+  // console.log("fullstack", fullStackProjects);
+  // console.log("frontend", frontendProjects);
   return (
-    <section className="projects-section px-10 py-5">
+    <section className="projects-section ">
       <div className="flex gap-x-10 text-xl">
         <div
-          className="cursor-pointer  "
+          className="cursor-pointer  text-lg md:text-xl"
           onClick={() => setCategory("all")}
           style={{
             borderBottom: category === "all" ? "2px solid #FBBF24" : "none",
@@ -66,7 +79,7 @@ const Projects = () => {
           All
         </div>
         <div
-          className="cursor-pointer "
+          className="cursor-pointer text-lg md:text-xl"
           onClick={() => setCategory("fullstack")}
           style={{
             borderBottom:
@@ -76,7 +89,7 @@ const Projects = () => {
           Full Stack Projects
         </div>
         <div
-          className="cursor-pointer "
+          className="cursor-pointer text-lg md:text-xl"
           onClick={() => setCategory("frontend")}
           style={{
             borderBottom:
@@ -89,10 +102,15 @@ const Projects = () => {
       <div className="py-5">
         {category === "all" && (
           <div className="flex flex-col gap-y-10 justify-center items-center">
-            {projects.map((item, i) => (
-              <motion.div whileHover={{scale:1.1}}
+            {projects.map((item, index) => (
+              <motion.div variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              
+              custom={index}
+              key={index}
                 className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C] "
-                key={i}
+                
               >
                 <div>
                   <Image
@@ -122,10 +140,15 @@ const Projects = () => {
         )}
         {category === "fullstack" && (
           <div className="flex flex-col gap-y-10 justify-center items-center">
-            {fullStackProjects.map((item, i) => (
-              <motion.div whileHover={{scale:1.1}}
+            {fullStackProjects.map((item, index) => (
+              <motion.div variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              
+              custom={index}
+              key={index}
                 className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C]"
-                key={i}
+               
               >
                 <div>
                   <Image
@@ -155,10 +178,15 @@ const Projects = () => {
         )}
         {category === "frontend" && (
           <div className="flex flex-col gap-y-10 justify-center items-center">
-            {frontendProjects.map((item, i) => (
-              <motion.div whileHover={{scale:1.1}}
+            {frontendProjects.map((item, index) => (
+              <motion.div variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              
+              custom={index}
+              key={index}
                 className="project border  p-3 rounded-xl flex flex-col gap-y-2 bg-[#2B2B2C]"
-                key={i}
+               
               >
                 <div>
                   <Image

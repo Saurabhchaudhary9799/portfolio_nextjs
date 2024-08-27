@@ -36,7 +36,7 @@ const Contact = () => {
     
   };
   return (
-    <section className="contact-section px-10 py-5 flex flex-col gap-y-5">
+    <section className="contact-section  flex flex-col gap-y-5">
       <div>
         <iframe
           className="w-full h-[400px] rounded-xl"
@@ -73,7 +73,6 @@ const Contact = () => {
           type="submit"
           className="bg-yellow-500 h-[52px] rounded-xl text-lg text-black"
           onClick={handleSubmit}
-          
 
         >send
         </button>

@@ -5,7 +5,7 @@ import { SiFreelancer } from "react-icons/si";
 export default function Home() {
   return (
     <>
-      <section className="about-section rounded-xl py-5 px-10">
+      <section className="about-section rounded-xl ">
             <div className="about-container mb-5 ">
                 <h1 className="text-3xl font-bold after:content-[''] after:block after:w-10 after:h-[2px] after:bg-yellow-500 mb-5"> About me</h1>
                 <p className="text-lg mb-5">Hello! Myself Saurbh Kumar, a passionate and driven Computer Science Engineering student currently in my final year at Shri Mata Vaishno Devi University. My specialization is  in full stack web development with javascript ,React.js , Node.js ,.Express.js & MongoDB , with a keen interest in applying my skills to solve real-world problems.</p>

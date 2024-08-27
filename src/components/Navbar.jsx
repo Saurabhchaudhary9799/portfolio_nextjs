@@ -44,7 +44,7 @@ const Navbar = () => {
         openProfile && <Profile/>
       }
       {
-        isOpen && <motion.div initial={{x:300}} animate={{x:0}}  className="absolute h-screen w-3/6 border right-0 top-0 transition-all  ease-in bg-white text-black z-10 block md:hidden"><SideNav handleCloseNavigation={handleCloseNavigation}/></motion.div>
+        isOpen && <motion.div initial={{x:300}} animate={{x:0}}  className="absolute h-screen w-3/6  right-0 top-0 bg-[#2B2B2C] text-white z-50 block md:hidden p-0"><SideNav handleCloseNavigation={handleCloseNavigation}/></motion.div>
       }
       <ul className="hidden md:flex gap-x-5 justify-center  text-xl py-5">
         <li>
