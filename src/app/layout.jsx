@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      <body className="bg-black text-white mx-[20px] md:mx-[50px] lg:mx-[100px] xl:mx-[150px] mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-5 gap-4 ">
+      <body className="bg-black text-white mx-o md:mx-[50px] lg:mx-[100px] xl:mx-[150px] mt-0 md:mt-10 grid grid-cols-1 md:grid-cols-5 gap-4 ">
         
         <div className="border hidden md:block md:col-span-2 bg-[#1E1E1F] border-[#383838] rounded-xl  max-h-screen h-[750px]  sticky top-0">
          
