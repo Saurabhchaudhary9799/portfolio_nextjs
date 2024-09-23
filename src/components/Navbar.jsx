@@ -3,28 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import profile from "../../public/profile_picture.jpg";
-import Profile from "./Profile";
-import SideNav from "./SideNav";
-import {motion} from "framer-motion";
-
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [openProfile, setOpenProfile] = useState(false);
- const [isOpen , setIsOpen] = useState(false);
- 
- 
+
   const handleOpenProfile = () => {
     setOpenProfile(!openProfile);
   };
 
-  const handleNavigation = () =>{
-    setIsOpen(!isOpen);
-  }
-  const handleCloseNavigation = () =>{
-    setIsOpen(false);
-  }
   return (
     <section className="navbar-section bg-[#2B2B2C] rounded-t relative">
       <div className="flex md:hidden justify-between items-center px-4 md:px-10 py-2">
@@ -36,30 +33,49 @@ const Navbar = () => {
             onClick={handleOpenProfile}
           />
         </div>
-        <span className="text-2xl cursor-pointer" onClick={handleNavigation}>
-          <GiHamburgerMenu />
-        </span>
+        <Drawer>
+          <DrawerTrigger>
+            <span className="text-2xl cursor-pointer">
+              <GiHamburgerMenu />
+            </span>
+          </DrawerTrigger>
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerDescription>
+                <ul className="space-y-4 text-xl font-regular">
+                  <DrawerClose asChild>
+                    <li>
+                      <Link href="/">about</Link>
+                    </li>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <li>
+                      <Link href="/resume">resume</Link>
+                    </li>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <li>
+                      <Link href="/projects">projects</Link>
+                    </li>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <li>
+                      <Link href="/contact">contact</Link>
+                    </li>
+                  </DrawerClose>
+                </ul>
+              </DrawerDescription>
+            </DrawerHeader>
+            <DrawerFooter>
+              <DrawerClose>
+                <Button size="icon">
+                  <span className="h-4 w-4">X</span>
+                </Button>
+              </DrawerClose>
+            </DrawerFooter>
+          </DrawerContent>
+        </Drawer>
       </div>
-      {
-        openProfile && <Profile/>
-      }
-      {
-        isOpen && <motion.div initial={{x:300}} animate={{x:0}}  className="absolute h-screen w-3/6  right-0 top-0 bg-[#2B2B2C] text-white z-50 block md:hidden p-0"><SideNav handleCloseNavigation={handleCloseNavigation}/></motion.div>
-      }
-      <ul className="hidden md:flex gap-x-5 justify-center  text-lg py-2">
-        <li>
-          <Link href="/">about</Link>
-        </li>
-        <li>
-          <Link href="/resume">resume</Link>
-        </li>
-        <li>
-          <Link href="/projects">projects</Link>
-        </li>
-        <li>
-          <Link href="/contact">contact</Link>
-        </li>
-      </ul>
     </section>
   );
 };
