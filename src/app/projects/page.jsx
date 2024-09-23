@@ -123,6 +123,7 @@ const Projects = () => {
                 initial="initial"
                 whileInView="animate"
                 custom={index}
+                key={index}
                 whileHover="hover" // Apply shaking effect on hover
                 className="relative project rounded flex flex-col gap-y-2 bg-[#2B2B2C] overflow-hidden"
                 // variants={shakeEffect} // Add the shake effect variant
@@ -155,6 +156,7 @@ const Projects = () => {
                 initial="initial"
                 whileInView="animate"
                 custom={index}
+                key={index}
                 whileHover="hover" // Apply shaking effect on hover
                 className="relative project rounded flex flex-col gap-y-2 bg-[#2B2B2C] overflow-hidden"
                 // variants={shakeEffect} // Add the shake effect variant
