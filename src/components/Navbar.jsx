@@ -26,17 +26,17 @@ const Navbar = () => {
     setIsOpen(false);
   }
   return (
-    <section className="navbar-section bg-[#2B2B2C] rounded-t-xl relative">
-      <div className="flex md:hidden justify-between items-center px-10 py-5">
+    <section className="navbar-section bg-[#2B2B2C] rounded-t relative">
+      <div className="flex md:hidden justify-between items-center px-4 md:px-10 py-2">
         <div>
           <Image
             src={profile}
             alt="profile_picture"
-            className="h-16 w-16 rounded-[50%] transition-all duration-200 ease-in-out cursor-pointer"
+            className="h-8 w-8 rounded-[50%] transition-all duration-200 ease-in-out cursor-pointer"
             onClick={handleOpenProfile}
           />
         </div>
-        <span className="text-4xl cursor-pointer" onClick={handleNavigation}>
+        <span className="text-2xl cursor-pointer" onClick={handleNavigation}>
           <GiHamburgerMenu />
         </span>
       </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
       {
         isOpen && <motion.div initial={{x:300}} animate={{x:0}}  className="absolute h-screen w-3/6  right-0 top-0 bg-[#2B2B2C] text-white z-50 block md:hidden p-0"><SideNav handleCloseNavigation={handleCloseNavigation}/></motion.div>
       }
-      <ul className="hidden md:flex gap-x-5 justify-center  text-xl py-5">
+      <ul className="hidden md:flex gap-x-5 justify-center  text-lg py-2">
         <li>
           <Link href="/">about</Link>
         </li>
