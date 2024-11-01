@@ -152,7 +152,7 @@ const Resume = () => {
             <p>
               <span className="text-yellow-500 text-lg">Grade :</span> 7.73
             </p>
-            <p className="text-sm text-justify">
+            <p className="text-sm">
               Currently pursuing Computer Science & Engineering at Shri Mata
               Vaishno Devi University. Dedicated to mastering cutting-edge
               technologies and problem-solving skills for innovative solutions
@@ -175,7 +175,7 @@ const Resume = () => {
             <p>
               <span className="text-yellow-500 text-lg">Grade :</span> 92.20 %{" "}
             </p>
-            <p className="text-sm text-justify">
+            <p className="text-sm">
               I have passed out my 12th class from Nutan Adarsh Vidhya Mandir ,
               Nadbai , demonstrating strong academic performance and involvement
               in extracurricular activities, fostering teamwork and leadership
@@ -200,7 +200,7 @@ const Resume = () => {
             <p>
               <span className="text-yellow-500 text-lg">Grade :</span> 91.33%
             </p>
-            <p className="text-sm text-justify">
+            <p className="text-sm">
               I have passed out my 10th class from Bhagvati Bal Niketan Sr. Sec.
               school , Nadbai . In secondary school, I excelled academically,
               actively participating in various subjects. Engaged in
@@ -232,8 +232,8 @@ const Resume = () => {
             <span className="text-lg">01 Jul,2024 - 31 Aug,2024 </span>
             <p className="text-lg">Shri Mata Vaishno Devi University</p>
             <ul className="list-decimal list-inside">
-             <li className="text-sm text-justify">Developed a responsive conference website using React.js and Tailwind CSS, enhancing user experience across various devices with a focus on accessibility and performance</li>
-             <li className="text-sm text-justify">Maintained proactive attitude in tackling new challenges and demonstrated a commitment to practical problem-solving and continuous learning throughout my internship</li>
+             <li className="text-sm">Developed a responsive conference website using React.js and Tailwind CSS, enhancing user experience across various devices with a focus on accessibility and performance</li>
+             <li className="text-sm">Maintained proactive attitude in tackling new challenges and demonstrated a commitment to practical problem-solving and continuous learning throughout my internship</li>
             </ul>
             
           </motion.div>
@@ -254,8 +254,8 @@ const Resume = () => {
             <span className="text-lg">01 Oct,2023 - 31 Oct,2023 </span>
             <p className="text-lg">Hacktoberfest 2023</p>
             <ul className="list-decimal list-inside">
-             <li className="text-sm text-justify">Actively participated in Hacktoberfest by contributing high-quality pull requests to multiple open-source projects, enhancing functionality and user experience.</li>
-             <li className="text-sm text-justify">Engaged with the developer community to identify areas for improvement, fostering collaboration and driving project innovation.</li>
+             <li className="text-sm">Actively participated in Hacktoberfest by contributing high-quality pull requests to multiple open-source projects, enhancing functionality and user experience.</li>
+             <li className="text-sm">Engaged with the developer community to identify areas for improvement, fostering collaboration and driving project innovation.</li>
             </ul>
           </motion.div>
         </div>

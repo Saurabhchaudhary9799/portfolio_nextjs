@@ -79,7 +79,7 @@ const Navbar = () => {
       <div className=" ">
         <ul className="hidden md:flex justify-center items-center gap-x-5 py-2">
           <li>
-            <Link href="/">about</Link>
+            <Link href="/" >about</Link>
           </li>
           <li>
             <Link href="/resume">resume</Link>
