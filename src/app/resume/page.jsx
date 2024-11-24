@@ -6,7 +6,11 @@ import {
   FaJs,
   FaBootstrap,
   FaNodeJs,
+  FaGitSquare,
+  FaDocker,
+  FaAws,
 } from "react-icons/fa";
+
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import {
   SiChakraui,
@@ -14,6 +18,8 @@ import {
   SiExpress,
   SiRedux,
   SiTypescript,
+  SiMysql,
+  SiPrisma
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { IoLogoGithub } from "react-icons/io5";
@@ -96,6 +102,16 @@ const Resume = () => {
       color: "text-blue-700", // MongoDB green color
     },
     {
+      title: "MySQL",
+      icon: SiMysql,
+      color: "text-cyan-600", // MongoDB green color
+    },
+    {
+      title: "Prisma",
+      icon: SiPrisma,
+      color: "text-teal-600", // MongoDB green color
+    },
+    {
       title: "Redux",
       icon: SiRedux,
       color: "text-purple-500", // Redux purple color
@@ -104,6 +120,11 @@ const Resume = () => {
       title: "Next.js",
       icon: RiNextjsFill,
       color: "text-black", // Next.js black color
+    },
+    {
+      title: "Git",
+      icon: FaGitSquare,
+      color: "text-red-500", // Next.js black color
     },
     {
       title: "Gitgub",
@@ -124,6 +145,16 @@ const Resume = () => {
       title: "Postman",
       icon: SiPostman,
       color: "text-orange-500", // Typescript blue color
+    },
+    {
+      title: "Docker",
+      icon: FaDocker,
+      color: "text-blue-500", // Typescript blue color
+    },
+    {
+      title: "AWS Cloud",
+      icon: FaAws,
+      color: "text-yellow-500", // Typescript blue color
     },
   ];
 
@@ -227,6 +258,30 @@ const Resume = () => {
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">
+              Open Source Contributor
+            </h1>
+            <span className="text-lg">01 Oct,2024 - 10 Nov,2024 </span>
+            <p className="text-lg">GirlScript Summer Of Code</p>
+            <ul className="list-decimal list-inside">
+             <li className="text-sm">Achieved global rank 51 out of over 40,000 contributors, successfully submitting 45 pull requests to various open-source repositories.</li>
+             <li className="text-sm">Contributed to both frontend and backend codebases, showcasing versatility in React.js, Tailwind CSS, JavaScript, and Node.js.</li>
+             <li className="text-sm">Collaborated with maintainers and other contributors to identify, design, and implement improvements across multiple projects, including bug fixes, feature enhancements, and UI/UX optimizations.</li>
+             <li className="text-sm">Enhanced project functionality and user experience by ensuring code quality, responsiveness, and efficient workflows, leveraging modern development practices and clean, modular code.</li>
+             <li className="text-sm">Demonstrated proactive communication and problem-solving skills, engaging with the community to support other contributors and promote a collaborative environment.</li>
+            </ul>
+          </motion.div>
+        <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 0.05,
+              },
+            }}
+            className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
+          >
+            <h1 className="text-yellow-500 text-xl font-bold">
               React.js Frontend Developer
             </h1>
             <span className="text-lg">01 Jul,2024 - 31 Aug,2024 </span>
@@ -258,6 +313,7 @@ const Resume = () => {
              <li className="text-sm">Engaged with the developer community to identify areas for improvement, fostering collaboration and driving project innovation.</li>
             </ul>
           </motion.div>
+          
         </div>
       </div>
 
