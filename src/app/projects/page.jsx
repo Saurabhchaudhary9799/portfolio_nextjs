@@ -36,6 +36,13 @@ const Projects = () => {
   const [category, setCategory] = useState("all");
   const projects = [
     {
+      title: "SkySocial",
+      image: "/projects/skySocial.png",
+      githubLink: "https://github.com/Saurabhchaudhary9799/SkySocial",
+      liveLink: "https://sky-social.vercel.app/",
+      category: "fullstack",
+    },
+    {
       title: "Natours",
       image: "/projects/natours.png",
       githubLink: "https://github.com/Saurabhchaudhary9799/TourWebsite",
