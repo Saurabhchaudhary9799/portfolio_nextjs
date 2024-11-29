@@ -10,7 +10,7 @@ import {
   FaDocker,
   FaAws,
 } from "react-icons/fa";
-
+import { IoLogoFirebase } from "react-icons/io5";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import {
   SiChakraui,
@@ -156,6 +156,11 @@ const Resume = () => {
       icon: FaAws,
       color: "text-yellow-500", // Typescript blue color
     },
+    {
+      title: "Firebase",
+      icon: IoLogoFirebase,
+      color: "text-yellow-500", // Typescript blue color
+    },
   ];
 
   return (
@@ -174,6 +179,7 @@ const Resume = () => {
                 delay: 0.05,
               },
             }}
+            viewport={{ once: true }}  
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">
@@ -199,6 +205,7 @@ const Resume = () => {
                 delay: 0.15,
               },
             }}
+            viewport={{ once: true }}  
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">High School</h1>
@@ -222,6 +229,7 @@ const Resume = () => {
                 delay: 0.25,
               },
             }}
+            viewport={{ once: true }}  
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">
@@ -255,6 +263,7 @@ const Resume = () => {
                 delay: 0.05,
               },
             }}
+            viewport={{ once: true }}  
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">
@@ -279,6 +288,7 @@ const Resume = () => {
                 delay: 0.05,
               },
             }}
+            viewport={{ once: true }}  
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">
@@ -301,6 +311,7 @@ const Resume = () => {
                 delay: 0.05,
               },
             }}
+            viewport={{ once: true }}  
             className="relative border bg-[#2B2B2C] before:content-[''] before:block before:w-[15px] before:h-[15px] before:bg-white before:rounded-[50%] before:absolute before:-left-[28px] before:-top-[1px] px-5 rounded-xl py-3"
           >
             <h1 className="text-yellow-500 text-xl font-bold">
@@ -327,6 +338,7 @@ const Resume = () => {
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"
+              viewport={{ once: true }}   
               custom={index}
               key={index}
               className="bg-white text-black px-3 py-2 rounded-xl flex justify-center items-center gap-x-3"
