@@ -86,7 +86,7 @@ export default function Home() {
             What I&apos;m doing
           </h1>
           <div className="flex flex-col xl:flex-row gap-y-5 xl:gap-x-5 xl:flex-wrap">
-            <div className="   flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl group bg-white hover:border text-black">
+            <div className="   flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl group bg-white hover:scale-105 transition-all duration-300 text-black">
               <span className="text-yellow-500 text-3xl">
                 <FaLaptopCode />
               </span>
@@ -102,7 +102,7 @@ export default function Home() {
                 <span className="text-yellow-500 text-lg">&quot;</span>
               </p>
             </div>
-            <div className="  flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl group bg-white hover:border text-black">
+            <div className="  flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl group bg-white hover:scale-105 transition-all duration-300 text-black">
               <span className="text-yellow-500 text-3xl">
                 <SiFreelancer />
               </span>
@@ -115,7 +115,7 @@ export default function Home() {
                 <span className="text-yellow-500 text-lg">&quot;</span>
               </p>
             </div>
-            <div className="   flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl group bg-white hover:border text-black">
+            <div className="   flex flex-col justify-center items-center p-3 gap-y-2 rounded-xl group bg-white hover:scale-105 transition-all duration-300 text-black">
               <span className="text-yellow-500 text-3xl">
                 <FaCodeMerge />
               </span>

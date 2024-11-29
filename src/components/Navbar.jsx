@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <section className="navbar-section bg-white text-black  relative">
       <div className="flex md:hidden justify-between items-center px-4 md:px-10 py-2">
-        <div>
+        <div className="font-bold text-lg">
           Portfolio
         </div>
         <Drawer>
