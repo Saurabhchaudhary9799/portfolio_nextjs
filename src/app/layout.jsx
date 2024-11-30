@@ -1,13 +1,12 @@
-
 import Profile from "@/components/Profile";
 
 import "./globals.css";
-import { Poppins } from 'next/font/google';
+import { Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Design from "@/components/Design";
 
-const poppins = Poppins({ weight: ['400', '700'], subsets: ['latin'] });
-
+const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio",
@@ -15,21 +14,24 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
   return (
     <html lang="en">
-      <body className={`bg-black text-white mx-o md:mx-[50px] lg:mx-[100px] xl:mx-[150px] mt-0 md:mt-10 flex flex-col md:flex-row  gap-4 ${poppins.className}`}>
+      <body
+        className="bg-black relative"
+      >
+        <div className={`bg-black text-white mx-o md:mx-[50px] lg:mx-[100px] xl:mx-[150px] mt-0 md:mt-10 flex flex-col md:flex-row  gap-4 ${poppins.className}`}>
+
         
         <div className="border hidden md:block  bg-[#1E1E1F] border-[#383838] rounded  max-h-screen h-[750px]  sticky top-0">
-         
-        <Profile />
+          <Profile />
         </div>
         <div className="flex-1 border bg-[#1E1E1F] border-[#383838] rounded">
-          <Navbar/>
+          <Navbar />
           <main className="px-5 md:px-10 py-5">{children}</main>
-          </div>
-        
-        </body>
+        </div>
+        </div>
+        <div className="absolute top-0 left-0"><Design/></div>
+      </body>
     </html>
   );
 }
