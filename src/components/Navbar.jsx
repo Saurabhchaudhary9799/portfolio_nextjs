@@ -20,11 +20,11 @@ const Navbar = () => {
 
   
   return (
-    <section className="navbar-section bg-white text-black  relative">
+    <section className="navbar-section bg-white text-black  relative md:rounded-t">
       <div className="flex md:hidden justify-between items-center px-4 md:px-10 py-2">
-        <div className="font-bold text-lg">
+        <Link href={"/"} className="font-bold text-lg">
           Portfolio
-        </div>
+        </Link>
         <Drawer>
           <DrawerTrigger>
             <span className="text-2xl cursor-pointer">
@@ -71,16 +71,16 @@ const Navbar = () => {
       <div className=" ">
         <ul className="hidden md:flex justify-center items-center gap-x-5 py-2">
           <li>
-            <Link href="/" >about</Link>
+            <Link href="/" >About</Link>
           </li>
           <li>
-            <Link href="/resume">resume</Link>
+            <Link href="/resume">Resume</Link>
           </li>
           <li>
-            <Link href="/projects">projects</Link>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <Link href="/contact">contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
